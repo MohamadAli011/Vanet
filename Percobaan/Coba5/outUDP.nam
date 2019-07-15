@@ -1,0 +1,46 @@
+V -t * -v 1.0a5 -a 0
+A -t * -n 1 -p 0 -o 0x7fffffff -c 30 -a 1
+A -t * -h 1 -m 1073741823 -s 0
+c -t * -i 0 -n blue
+c -t * -i 1 -n red
+n -t * -a 0 -s 0 -S UP -v circle -c black -i black
+n -t * -a 1 -s 1 -S UP -v circle -c black -i black
+n -t * -a 2 -s 2 -S UP -v circle -c black -i black
+l -t * -s 0 -d 2 -S UP -r 2000000 -D 0.01 -c black -o right
+l -t * -s 2 -d 1 -S UP -r 1500000 -D 0.01 -c black -o right
++ -t 0.1 -s 0 -d 2 -p udp -e 724 -c 0 -i 0 -a 0 -x {0.0 1.0 0 ------- null}
+- -t 0.1 -s 0 -d 2 -p udp -e 724 -c 0 -i 0 -a 0 -x {0.0 1.0 0 ------- null}
+h -t 0.1 -s 0 -d 2 -p udp -e 724 -c 0 -i 0 -a 0 -x {0.0 1.0 -1 ------- null}
+r -t 0.112896 -s 0 -d 2 -p udp -e 724 -c 0 -i 0 -a 0 -x {0.0 1.0 0 ------- null}
++ -t 0.112896 -s 2 -d 1 -p udp -e 724 -c 0 -i 0 -a 0 -x {0.0 1.0 0 ------- null}
+- -t 0.112896 -s 2 -d 1 -p udp -e 724 -c 0 -i 0 -a 0 -x {0.0 1.0 0 ------- null}
+h -t 0.112896 -s 2 -d 1 -p udp -e 724 -c 0 -i 0 -a 0 -x {0.0 1.0 -1 ------- null}
+r -t 0.126757333333333 -s 2 -d 1 -p udp -e 724 -c 0 -i 0 -a 0 -x {0.0 1.0 0 ------- null}
+v -t 0.126757333333333 -e sim_annotation 0.126757333333333 1 1 received {ping(42)}
++ -t 0.2 -s 1 -d 2 -p udp -e 100 -c 2 -i 1 -a 2 -x {1.0 0.0 0 ------- null}
+- -t 0.2 -s 1 -d 2 -p udp -e 100 -c 2 -i 1 -a 2 -x {1.0 0.0 0 ------- null}
+h -t 0.2 -s 1 -d 2 -p udp -e 100 -c 2 -i 1 -a 2 -x {1.0 0.0 -1 ------- null}
+r -t 0.210533333333333 -s 1 -d 2 -p udp -e 100 -c 2 -i 1 -a 2 -x {1.0 0.0 0 ------- null}
++ -t 0.210533333333333 -s 2 -d 0 -p udp -e 100 -c 2 -i 1 -a 2 -x {1.0 0.0 0 ------- null}
+- -t 0.210533333333333 -s 2 -d 0 -p udp -e 100 -c 2 -i 1 -a 2 -x {1.0 0.0 0 ------- null}
+h -t 0.210533333333333 -s 2 -d 0 -p udp -e 100 -c 2 -i 1 -a 2 -x {1.0 0.0 -1 ------- null}
+r -t 0.220933333333333 -s 2 -d 0 -p udp -e 100 -c 2 -i 1 -a 2 -x {1.0 0.0 0 ------- null}
+v -t 0.220933333333333 -e sim_annotation 0.220933333333333 2 0 received {countdown(5)}
++ -t 0.3 -s 0 -d 2 -p udp -e 500 -c 0 -i 2 -a 0 -x {0.0 1.0 1 ------- null}
+- -t 0.3 -s 0 -d 2 -p udp -e 500 -c 0 -i 2 -a 0 -x {0.0 1.0 1 ------- null}
+h -t 0.3 -s 0 -d 2 -p udp -e 500 -c 0 -i 2 -a 0 -x {0.0 1.0 -1 ------- null}
+r -t 0.312 -s 0 -d 2 -p udp -e 500 -c 0 -i 2 -a 0 -x {0.0 1.0 1 ------- null}
++ -t 0.312 -s 2 -d 1 -p udp -e 500 -c 0 -i 2 -a 0 -x {0.0 1.0 1 ------- null}
+- -t 0.312 -s 2 -d 1 -p udp -e 500 -c 0 -i 2 -a 0 -x {0.0 1.0 1 ------- null}
+h -t 0.312 -s 2 -d 1 -p udp -e 500 -c 0 -i 2 -a 0 -x {0.0 1.0 -1 ------- null}
+r -t 0.324666666666667 -s 2 -d 1 -p udp -e 500 -c 0 -i 2 -a 0 -x {0.0 1.0 1 ------- null}
+v -t 0.324666666666667 -e sim_annotation 0.324666666666667 3 1 received {kecelakaan}
++ -t 0.4 -s 1 -d 2 -p udp -e 828 -c 2 -i 3 -a 2 -x {1.0 0.0 1 ------- null}
+- -t 0.4 -s 1 -d 2 -p udp -e 828 -c 2 -i 3 -a 2 -x {1.0 0.0 1 ------- null}
+h -t 0.4 -s 1 -d 2 -p udp -e 828 -c 2 -i 3 -a 2 -x {1.0 0.0 -1 ------- null}
+r -t 0.414416 -s 1 -d 2 -p udp -e 828 -c 2 -i 3 -a 2 -x {1.0 0.0 1 ------- null}
++ -t 0.414416 -s 2 -d 0 -p udp -e 828 -c 2 -i 3 -a 2 -x {1.0 0.0 1 ------- null}
+- -t 0.414416 -s 2 -d 0 -p udp -e 828 -c 2 -i 3 -a 2 -x {1.0 0.0 1 ------- null}
+h -t 0.414416 -s 2 -d 0 -p udp -e 828 -c 2 -i 3 -a 2 -x {1.0 0.0 -1 ------- null}
+r -t 0.427728 -s 2 -d 0 -p udp -e 828 -c 2 -i 3 -a 2 -x {1.0 0.0 1 ------- null}
+v -t 0.427728 -e sim_annotation 0.427728 4 0 received {ping  (12345678)}
