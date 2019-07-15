@@ -1,0 +1,30 @@
+1) netconvert --osm-files (nama file osm).osm -o (nama file osm jadinya).net.xml
+
+2) polyconvert --net-file (nama file osm jadinya).net.xml --osm-files (nama file osm).osm --type-file osmPolyconvert.typ.xml -o (nama jadinya).poly.xml
+
+3) python /usr/share/sumo/tools/randomTrips.py -n (nama file osm jadinya).net.xml -r (nama map jadinya).rou.xml -e 50 -l
+
+4) buat file (file sumo).sumo.cfg
+isi
+<configuration>
+	<input>
+			<net-file value="vanet.net.xml"/>
+	<route-files value="vanet.rou.xml"/>
+		<additional-files value="vanet.poly.xml"/>
+	     </input>
+	<time>
+	<begin value="0"/>
+	<end value="300"/>
+	<step-length value="0.1"/>
+	</time>
+	</configuration>
+
+5) jalankan sumo-gui (file sumo).sumo.cfg
+
+6) sumo -c file sumo).sumo.cfg --fcd-output (nama file).sumo.xml
+
+7) python /usr/share/sumo/tools/traceExporter.py --fcd-input (nama file).sumo.xml --ns2config-output (namafile baru).tcl --ns2activity-output activity.tcl --ns2mobility-output mobility.tcl
+
+
+
+
