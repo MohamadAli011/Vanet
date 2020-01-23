@@ -26,5 +26,7 @@ isi
 7) python /usr/share/sumo/tools/traceExporter.py --fcd-input (nama file).sumo.xml --ns2config-output (namafile baru).tcl --ns2activity-output activity.tcl --ns2mobility-output mobility.tcl
 
 
+https://www.ascinc.com/blog/linux/how-to-build-a-simple-router-with-ubuntu-server-18-04-1-lts-bionic-beaver/
+
 
 
